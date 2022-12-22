@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Spola</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="image/icon01.png" type="image/x-icon"  >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+            <div class="navigation">
+                <img src="image/logo.png" alt="Logo">
+                <ul class="nav">
+                    <li><a href="#">NEWSLETTER</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+
+            </div>
+            
+        </div>
+    </div>
+    <div class="banner">
+        <div class="wrapper">
+            <h1 class="title">Create Your Own Pizza</h1>
+            <p class="discription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy since the 1500s.</p>
+            <a class="btn" href="#">read more</a>
+            <img class="pizza" src="image/pizza.png" alt="pizza">
+        </div>
+    </div>
+    <div class="page">
+        <div class="wrapper">
+            <div class="center">
+                <h2 class="h2">HOW TO PROGRESS?</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+
+            </div>
+            
+            <ul class="menu">
+                <li><a class="active" href="javascript:void(0)">PIZZA CARTOON</a></li>
+                <li><a href="javascript:void(0)">BURGER</a></li>
+                <li><a href="javascript:void(0)">SANDWICH</a></li>
+                <li><a href="javascript:void(0)">LOREMISPSUM</a></li>
+            </ul>
+
+            <div class="box">
+                <div class="box-item">
+                    <p class="number number_1">1</p>
+                    <div class="box-text">
+                        <h3>CREATE IT</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+
+                    </div>
+                </div>
+                <div class="box-item">
+                    <p class="number number_2">2</p>
+                    <div class="box-text">
+                        <h3>NAME IT</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+
+                    </div>
+                </div>
+                <div class="box-item">
+                    <p class="number number_3">3</p>
+                    <div class="box-text">
+                        <h3>FAME IT</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+
+                    </div>
+                </div>
+
+        
+            </div>
+            <p class="center">
+                <a class="btn-start" href="#">CREATE YOUR LEGEND</a>
+            </p>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper">
+            <p>© 2022 Pizza Spola. All rights reserved.</p>
+        </div>
+    </div>
+
+<script>
+const list = document.querySelectorAll('.menu li a')
+ list.forEach(item =>{ 
+        item.addEventListener('click', (e) =>{
+        list.forEach(el=>{ el.classList.remove('active'); });
+        item.classList.add('active')
+    })
+})
+</script>
+
+</body>
+</html>
